@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "belajar-javascript"
+		},
+		{
+			"path": "LATIHAN"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LATIHAN"
+	}
+}
