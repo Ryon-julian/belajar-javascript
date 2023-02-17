@@ -45,6 +45,28 @@
 
 // 5. slice
 // slice(awal,akhir);
-var arr = ['Ryon', 'Julian', 'Anggara', 'Ari', 'Faud' ];
-var arr2 = arr.slice(1,4);
-console.log(arr2.join(' _ '));
+// var arr = ['Ryon', 'Julian', 'Anggara', 'Ari', 'Faud' ];
+// var arr2 = arr.slice(1,4);
+// console.log(arr2.join(' _ '));
+
+//  6. foreach
+var angka = [1,2,3,4,5,6,7,8];
+var nama = ['ryon', 'julian', 'angka']
+// for( var i = 0; i < angka.length; i++) {
+//     console.log(angka[i]);
+// }
+ 
+// var cetak = function(e) {
+//     console.log(e);
+// }
+// angka.forEach(cetak);
+// nama.forEach(function(e, i) {
+//     console.log('Mahasiswa ke-' + (i+1) + 'adalah :' + e);
+// }) 
+
+// 7. map
+var angka = [1,2,3,4,5,6,8,4];
+var angka2 = angka.map(function(e){
+    return e * 2;
+}) ;
+console.log(angka2.join(' - '));
