@@ -72,8 +72,15 @@ var nama = ['ryon', 'julian', 'angka']
 // console.log(angka2.join(' - '));
 
 // 8.sort
+// var angka = [1,2,10,3,30,4,5,6,8,4];
+// angka.sort(function(a,b) {
+//     return a-b;
+// });
+// console.log(angka.join(' - '));
+
+// 9.Filter & find
 var angka = [1,2,10,3,30,4,5,6,8,4];
-angka.sort(function(a,b) {
-    return a-b;
+var angka2 = angka.find(function(x) {
+    return x > 5;
 });
-console.log(angka.join(' - '));
+console.log(angka2);
