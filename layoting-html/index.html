@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: blanchedalmond;
+        }
+
+        main::after {
+            display: table;
+        }
+
+        main>div {
+            width: 50%;
+            float: left;
+            background: green;
+        }
+
+        main>div:nth-child(1) {
+            background: red;
+
+        }
+
+        footer {
+            background-color: blueviolet;
+            position: absolute;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            main>div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Lorem ipsum dolor sit amet.
+
+        <input type="checkbox" onclick="darkMode()">
+    </header>
+    <main>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusamus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, accusamus.
+        </div>
+    </main>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto harum earum ipsum recusandae
+            deleniti
+            asperiores odit dignissimos est. Enim est necessitatibus culpa nesciunt dolorem. Aliquam commodi vel totam
+            exercitationem eligendi tempora id magnam qui incidunt optio illum ipsa, sit minima tenetur explicabo
+            provident
+            expedita laboriosam. Pariatur repellendus sunt molestias neque aut beatae adipisci sed laboriosam laborum
+            vel,
+            recusandae autem ex magnam iure ipsam ipsum impedit, et dicta! Itaque et ut natus eos quos placeat. Ipsam
+            recusandae sit culpa exercitationem nisi tenetur neque, tempore totam impedit fugit ab, unde amet similique
+            veniam error perferendis porro accusamus optio, voluptatibus numquam laborum?</p>
+    </div>
+    <footer>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam doloribus alias aliquam veniam provident aut
+        quas tenetur fugit itaque odit, repudiandae earum, ex voluptatem ratione nulla repellat ullam pariatur dolores.
+    </footer>
+
+    <script>
+        function darkMode() {
+            document.querySelector("body").style.background = "#111";
+            document.querySelector("p").style.color = "white";
+        }
+    </script>
+</body>
+
+</html>
